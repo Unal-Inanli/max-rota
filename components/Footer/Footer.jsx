@@ -23,7 +23,9 @@ const Footer = () => {
                                     <li>
                                         <Link href="/services">Hizmetlerim</Link>
                                     </li>
-
+                                    <li>
+                                        <Link href="/bulletin">Bültenler</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

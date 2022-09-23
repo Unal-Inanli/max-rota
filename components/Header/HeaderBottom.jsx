@@ -36,7 +36,7 @@ const HeaderBottom = () => {
                 </ul>
             </div>
             <div className="top_right">
-                <Link href="/demo" passHref>
+                <Link href="/new">
                     <PrimaryButton>
                         Hesap Oluştur
                     </PrimaryButton>
@@ -46,23 +46,23 @@ const HeaderBottom = () => {
             <div className="mobil_menu" onClick={openNav}>&#9776;</div>
             <div ref={mobileMenuRef} id="mobilMenu" className="sidenav">
                 <div className="close_btn" onClick={closeNav}>&times;</div>
-                <a href="#">
+                <Link href="/new">
                     <PrimaryButton>
                         Hesap Oluştur
                     </PrimaryButton>
-                </a>
-                <ul>
+                </Link>
+                <ul className='mobil_menu-list'>
                     <li>
-                        <a href="#">Consultanty Services</a>
+                        <Link href="/services">Consultanty Services</Link>
                     </li>
                     <li>
-                        <a href="#">Corporate</a>
+                        <Link href="/corporate">Corporate</Link>
                     </li>
                     <li>
-                        <a href="#">Platform</a>
+                        <Link href="/platform">Platform</Link>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
 

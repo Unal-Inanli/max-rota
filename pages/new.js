@@ -18,7 +18,7 @@ const Demo = () => {
                             </div>
                             <div className="col-md-5">
                                 <div className="acoo_right">
-                                    <h4><label>Demo</label> Hesap Oluştur</h4>
+                                    <h4><label>Yeni</label> Hesap Oluştur</h4>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
 
                                     <div className="acoo_item">

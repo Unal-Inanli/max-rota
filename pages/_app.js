@@ -1,11 +1,16 @@
+import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query'
 import '../styles/style.css'
-import '../styles/bootstrap.min.css'
-import '../styles/globals.css'
-
-
+import 'react-phone-number-input/style.css'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+  const queryClient = new QueryClient();
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Component {...pageProps} />
+    </QueryClientProvider>)
 }
 
 export default MyApp

@@ -10,7 +10,7 @@ import Presentation from '../page_components/home/Presentation'
 
 export default function Home() {
   return (
-    <MainLayout title={"RotaCapital"}> 
+    <MainLayout title={"RotaCapital"}>
       <Hero />
       <Features />
       <Information />
