@@ -10,18 +10,18 @@ const Tabs = ({ tabs }) => {
     return (
         <div className='container'>
             <ul className="nav nav-tabs" id="bulten_tabs">
-                {tabs && tabs.map(tab => {
-                    return (<li onClick={e => setActiveTab(tab.id)} className="nav-item" role="presentation">
+                {tabs && tabs.map((tab, index) => {
+                    return (<li key={index} onClick={e => setActiveTab(tab.id)} className="nav-item" role="presentation">
                         <button className={"nav-link " + isActive(tab.id)} id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">{tab.title}sdasd</button>
                     </li>)
                 })}
             </ul>
 
             <div className="tab-content" id="bulten_tabs_content">
-                {tabs && tabs.map(tab => {
+                {tabs && tabs.map((tab) => {
 
                     if (activeTab === tab.id) {
-                        return <Tab tabId={tab.id} content={tab.content} />
+                        return <Tab key={tab.id} tabId={tab.id} content={tab.content} />
                     }
                 })}
             </div>

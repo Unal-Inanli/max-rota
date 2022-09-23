@@ -12714,3 +12714,78 @@ th, td {
 .PhoneInputCountry {
   padding: 1rem;
 }
+
+.alerts {
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  padding: 1rem 2rem;
+}
+
+.alert {
+  display: flex;
+  padding: 1rem;
+  pointer-events: all;
+  min-width: 200px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #021421;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.alert--success {
+  border-left: 4px var(--bs-success) solid;
+}
+
+.alert--failed {
+  border-left: 4px var(--bs-danger) solid;
+}
+
+.alert__text {
+  color: white;
+
+}
+
+.alert__close {
+  flex-grow: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.alert__close-btn {
+  cursor: pointer;
+}
+
+.alert__title {
+  font-size: 1.3em;
+  color: white;
+  font-weight: bold;
+}
+
+.alert__body {
+  flex: 1;
+}
+
+.alert__duration-bar {
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.alert__duration-bar--success {
+background-color: var(--bs-success);
+}
+
+.alert__duration-bar--failed {
+  background-color: var(--bs-danger);
+}

@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useId } from 'react';
 import PrimaryButton from './Buttons/PrimaryButton';
 import { Controller, useForm } from "react-hook-form";
 import FormError from './FormError';
 import axios from 'axios';
 import { useMutation, useQuery } from 'react-query';
 import PhoneInputWithCountry from "react-phone-number-input/react-hook-form"
+import DispatchContext from '../context/DispatchContext';
 
 
 const InviteForm = () => {
 
 
     const [countryCode, setCountryCode] = React.useState();
+    const { alertsDispatch } = React.useContext(DispatchContext);
 
     const { mutate, isLoading } = useMutation(SendForm, {
-        onSuccess: (data) => {
-            console.log(data);
+        onSuccess: (res) => {
+            if (res.data.status) {
+                alertsDispatch({ name: "alert", id: Math.random() * 100, type: "success", "message": "Hesap başarıyla oluşturuldu!" })
+            }
+            else {
+                alertsDispatch({ name: "alert", id: Math.random() * 100, type: "failed", "message": res.data.msg })
+
+            }
         }
     });
 
