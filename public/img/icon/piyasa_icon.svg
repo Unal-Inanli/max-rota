@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73.95" height="72" viewBox="0 0 73.95 72">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3be8e8"/>
+      <stop offset="1" stop-color="#2982d2"/>
+    </linearGradient>
+  </defs>
+  <g id="bar-graph" transform="translate(0 -6.75)">
+    <g id="Page-1_49_" transform="translate(0 6.75)">
+      <g id="_x30_50---Upward-Trend" transform="translate(0 0)">
+        <path id="Shape_277_" d="M8.828,60.836a1.313,1.313,0,0,0,.4.945,1.225,1.225,0,0,0,.932.382c32.553-.375,47.8-9.751,54.852-17.55,7.571-8.365,7.571-16.764,7.571-16.847a1.275,1.275,0,0,1,1.275-1.292h3.556a1.275,1.275,0,0,0,.96-2.114L63.346,7.182a1.275,1.275,0,0,0-1.913,0L46.388,24.32a1.275,1.275,0,0,0,.947,2.117l4.842.038A1.275,1.275,0,0,1,53.453,27.7c.013.295.675,29.553-43.384,31.823a1.317,1.317,0,0,0-1.241,1.314Z" transform="translate(-7.553 -6.75)" fill="url(#linear-gradient)"/>
+        <path id="Shape_276_" d="M160.171,205.111a1.275,1.275,0,1,0,0,2.55h2.55a1.275,1.275,0,0,0,0-2.55Z" transform="translate(-135.946 -176.461)" fill="url(#linear-gradient)"/>
+        <path id="Shape_275_" d="M213.137,205.111a1.275,1.275,0,1,0,0,2.55h2.55a1.275,1.275,0,0,0,0-2.55Z" transform="translate(-181.262 -176.461)" fill="url(#linear-gradient)"/>
+        <path id="Shape_274_" d="M477.964,205.111a1.275,1.275,0,1,0,0,2.55h2.55a1.275,1.275,0,0,0,0-2.55Z" transform="translate(-407.839 -176.461)" fill="url(#linear-gradient)"/>
+        <path id="Shape_273_" d="M107.206,205.111a1.275,1.275,0,1,0,0,2.55h2.55a1.275,1.275,0,0,0,0-2.55Z" transform="translate(-90.631 -176.461)" fill="url(#linear-gradient)"/>
+        <path id="Shape_272_" d="M56.79,205.111H54.24a1.275,1.275,0,0,0,0,2.55h2.55a1.275,1.275,0,0,0,0-2.55Z" transform="translate(-45.315 -176.461)" fill="url(#linear-gradient)"/>
+        <path id="Shape_271_" d="M1.275,207.661h2.55a1.275,1.275,0,0,0,0-2.55H1.275a1.275,1.275,0,0,0,0,2.55Z" transform="translate(0 -176.461)" fill="url(#linear-gradient)"/>
+        <path id="Shape_270_" d="M71.4,277.876H68.85V246.728a1.275,1.275,0,0,0-2.55,0v31.148H58.65V258.93a1.275,1.275,0,0,0-2.55,0v18.947H48.45V265.394a1.275,1.275,0,1,0-2.55,0v12.482h-7.65v-8.441a1.275,1.275,0,0,0-2.55,0v8.441h-7.65v-6.005a1.275,1.275,0,0,0-2.55,0v6.005h-7.65v-4.59a1.275,1.275,0,0,0-2.55,0v4.59H7.65v-3.927a1.275,1.275,0,1,0-2.55,0v3.927H2.55a2.55,2.55,0,1,0,0,5.1H71.4a2.55,2.55,0,1,0,0-5.1Z" transform="translate(0 -210.976)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

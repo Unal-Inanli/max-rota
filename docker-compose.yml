@@ -1,0 +1,10 @@
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: DockerFile
+    tty: true
+    volumes:
+      - ./:/app
+    ports:
+      - 8000:3000

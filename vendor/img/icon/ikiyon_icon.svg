@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.997" height="81" viewBox="0 0 80.997 81">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3be8e8"/>
+      <stop offset="1" stop-color="#2982d2"/>
+    </linearGradient>
+  </defs>
+  <g id="pie-chart" transform="translate(-0.01)">
+    <path id="Path_23" data-name="Path 23" d="M42.881,42.871V0A45.588,45.588,0,0,0,.01,42.871ZM33.39,35.752H28.644V31.007H33.39ZM19.152,21.515H23.9v4.746H19.152Zm11.865-.983,3.356,3.356L21.525,36.735,18.169,33.38Z" fill="url(#linear-gradient)"/>
+    <path id="Path_24" data-name="Path 24" d="M119.967,301H91.582a30.9,30.9,0,0,0,28.385,28.385V301Z" transform="translate(-77.086 -253.383)" fill="url(#linear-gradient)"/>
+    <path id="Path_25" data-name="Path 25" d="M301.01,60v71.5c18.52-1.23,33.38-17.163,33.38-35.989A35.779,35.779,0,0,0,301.01,60Zm14.238,33.38a7.1,7.1,0,0,1,2.373,13.8v5.183h-4.746V107.18a7.108,7.108,0,0,1-4.746-6.682h4.746a2.373,2.373,0,1,0,2.373-2.373,7.1,7.1,0,0,1-2.373-13.8V79.142h4.746v5.183a7.108,7.108,0,0,1,4.746,6.682h-4.746a2.373,2.373,0,1,0-2.373,2.373Z" transform="translate(-253.383 -50.508)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
