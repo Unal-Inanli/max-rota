@@ -13,13 +13,17 @@ const InviteForm = () => {
 
 
     const [countryCode, setCountryCode] = React.useState();
-    const { alertsDispatch } = React.useContext(DispatchContext);
+    const { alertsDispatch, modalDispatch } = React.useContext(DispatchContext);
     const { localeContext } = React.useContext(AppStateContext);
 
     const { mutate, isLoading } = useMutation(SendForm, {
         onSuccess: (res) => {
             if (res.data.status) {
-                alertsDispatch({ name: "alert", id: Math.random() * 100, type: "success", "message": "Hesap başarıyla oluşturuldu!" })
+                modalDispatch({
+                    type: "success",
+                    title: "Başarılı!",
+                    body: "Hesabınız Başarıyla oluşturuldu."
+                })
             }
             else {
                 alertsDispatch({ name: "alert", id: Math.random() * 100, type: "failed", "message": res.data.msg })

@@ -28,7 +28,11 @@ const Demo = () => {
     const { mutate, isLoading } = useMutation(SendForm, {
         onSuccess: (res) => {
             if (res.data.status) {
-                alertsDispatch({ name: "alert", id: Math.random() * 100, type: "success", "message": "Hesap başarıyla oluşturuldu!" })
+                modalDispatch({
+                    type: "success",
+                    title: "Başarılı!",
+                    body: "Hesabınız Başarıyla oluşturuldu."
+                })
             }
             else {
                 alertsDispatch({ name: "alert", id: Math.random() * 100, type: "failed", "message": res.data.msg })

@@ -8,6 +8,8 @@ import { alertsInitial, alertsReducer } from '../reducers/AlertsReducer';
 import Alerts from '../components/Alerts';
 import AppLocale from '../components/AppLocale';
 import { localeInitial, localeReducer } from '../reducers/LocalReducer';
+import { modalInitial, modalReducer } from '../reducers/ModalReducer';
+import ModalContainer from '../components/ModalContainer';
 
 
 
@@ -16,14 +18,16 @@ function MyApp({ Component, pageProps }) {
   const queryClient = new QueryClient();
   const [alerts, alertsDispatch] = React.useReducer(alertsReducer, alertsInitial);
   const [locale, localeDispatch] = React.useReducer(localeReducer, localeInitial);
+  const [modal, modalDispatch] = React.useReducer(modalReducer, modalInitial);
 
   return (
-    <AppStateContext.Provider value={{ alertsContext: alerts, localeContext: locale }}>
-      <DispatchContext.Provider value={{ alertsDispatch: alertsDispatch, localeDispatch: localeDispatch }}>
+    <AppStateContext.Provider value={{ alertsContext: alerts, localeContext: locale, modalContext: modal }}>
+      <DispatchContext.Provider value={{ alertsDispatch, localeDispatch, modalDispatch }}>
         <QueryClientProvider client={queryClient}>
           <AppLocale>
             <Component {...pageProps} />
             <Alerts />
+            <ModalContainer />
           </AppLocale>
         </QueryClientProvider>
       </DispatchContext.Provider>
