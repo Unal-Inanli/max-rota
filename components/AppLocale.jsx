@@ -10,6 +10,11 @@ const AppLocale = ({ children }) => {
     const [show, setShow] = React.useState(false);
 
     React.useMemo(() => {
+
+        if (localeContext.country_code) {
+            setShow(true);
+        }
+
         if (!localeContext.country_code) {
             axios.get("https://ipapi.co/json/").then(res => {
                 localeDispatch({
