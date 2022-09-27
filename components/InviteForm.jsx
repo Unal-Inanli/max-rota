@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useMutation, useQuery } from 'react-query';
 import PhoneInputWithCountry from "react-phone-number-input/react-hook-form"
 import DispatchContext from '../context/DispatchContext';
+import AppStateContext from '../context/AppStateContext';
 
 
 const InviteForm = () => {
@@ -13,6 +14,7 @@ const InviteForm = () => {
 
     const [countryCode, setCountryCode] = React.useState();
     const { alertsDispatch } = React.useContext(DispatchContext);
+    const { localeContext } = React.useContext(AppStateContext);
 
     const { mutate, isLoading } = useMutation(SendForm, {
         onSuccess: (res) => {
@@ -26,11 +28,11 @@ const InviteForm = () => {
         }
     });
 
-    React.useMemo(() => {
-        axios.get("https://ipapi.co/json/").then(res => {
-            setCountryCode(res.data.country_code)
-        });
-    }, [])
+
+    React.useEffect(() => {
+        setCountryCode(localeContext.country_code);
+    }, [localeContext]);
+
 
     const { register, handleSubmit, control, watch, formState: { errors } } = useForm();
 
