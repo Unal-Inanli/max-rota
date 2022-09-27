@@ -12818,6 +12818,11 @@ background-color: var(--bs-success);
   stroke: var(--bs-success);
 }
 
+
+.custom_modal__icon--failed svg {
+  stroke: var(--bs-danger);
+}
+
 .custom_modal__title {
   color: white;
 }

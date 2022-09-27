@@ -26,9 +26,19 @@ const InviteForm = () => {
                 })
             }
             else {
-                alertsDispatch({ name: "alert", id: Math.random() * 100, type: "failed", "message": res.data.msg })
-
+                modalDispatch({
+                    type: "failed",
+                    title: "Hata!",
+                    body: res.data.msg || "İsteğinizi Oluştururken Bir Hata Oluştu."
+                })
             }
+        },
+        onError: (res) => {
+            modalDispatch({
+                type: "failed",
+                title: "Hata!",
+                body: res.data.msg || "İsteğinizi Oluştururken Bir Hata Oluştu."
+            })
         }
     });
 

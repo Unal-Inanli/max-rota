@@ -15,7 +15,7 @@ const Demo = () => {
 
     const [countryCode, setCountryCode] = React.useState();
     const { register, handleSubmit, control, watch, formState: { errors } } = useForm();
-    const { alertsDispatch } = React.useContext(DispatchContext);
+    const { alertsDispatch, modalDispatch } = React.useContext(DispatchContext);
     const { localeContext } = React.useContext(AppStateContext);
 
 
@@ -35,8 +35,11 @@ const Demo = () => {
                 })
             }
             else {
-                alertsDispatch({ name: "alert", id: Math.random() * 100, type: "failed", "message": res.data.msg })
-
+                modalDispatch({
+                    type: "failed",
+                    title: "Hata!",
+                    body: res.data.msg || "İsteğinizi Oluştururken Bir Hata Oluştu."
+                })
             }
         }
     });

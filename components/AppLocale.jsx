@@ -24,6 +24,13 @@ const AppLocale = ({ children }) => {
                 })
 
                 setShow(true);
+            }).catch(err => {
+                localeDispatch({
+                    name: "setLocale",
+                    country_code: "TR",
+                    country: "Turkey"
+                })
+                setShow(true);
             });
         }
     }, []);

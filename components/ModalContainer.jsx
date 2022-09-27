@@ -2,6 +2,7 @@ import { AnimatePresence } from 'framer-motion';
 import React, { useEffect } from 'react';
 import AppStateContext from '../context/AppStateContext';
 import DispatchContext from '../context/DispatchContext';
+import FailedModal from './Modals/FailedModals';
 import SuccessModal from './Modals/SuccessModal';
 
 const ModalContainer = () => {
@@ -27,7 +28,7 @@ const ModalContainer = () => {
 
         const modals = {
             "success": <SuccessModal remove={removeModal} title={context.title} body={context.body} />,
-            "failed": ""
+            "failed": <FailedModal remove={removeModal} title={context.title} body={context.body} />
         }
 
         return modals[context.type]
